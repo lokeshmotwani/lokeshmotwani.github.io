@@ -1,15 +1,38 @@
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body{
+        background-color: #f5f3f1 !important;
+        font-family: Albura !important;
+        padding: 5%;
+        font-size: 40px !important;    
+    }
+    .inline-link{
+        color: #000000 !important;
+        font-size: 40px !important;
+    }
+ }
 
-body{
-    background-color: #f5f3f1 !important;
-    font-family: Albura !important;
-    padding: 5%;
-    font-size: 20px !important;
-    
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) { 
+    body{
+        background-color: #f5f3f1 !important;
+        font-family: Albura !important;
+        padding: 5%;
+        font-size: 40px !important;    
+    }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body{
+        background-color: #f5f3f1 !important;
+        font-family: Albura !important;
+        padding: 5%;
+        font-size: 40px !important;    
+    }
+
 }
+
 h1{
     font-family: Albura SemiBold !important;
     font-weight: 400;
@@ -66,8 +89,4 @@ a{
 }
 .introduction-text{
     margin-bottom: 20px;
-}
-.inline-link{
-    color: #000000 !important;
-    font-size: 20px !important;
 }
