@@ -1,54 +1,9 @@
 
-@media (min-width: 768px) {
-    body{
-        background-color: #f5f3f1 !important;
-        font-family: Albura !important;
-        padding: 5%;
-        font-size: 3em !important;    
-    }
-   
-    h1{
-        font-family: Albura SemiBold !important;
-        font-weight: 400;
-        line-height: 1.125;
-    }
- }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width:992px) { 
-    body{
-        background-color: #f5f3f1 !important;
-        font-family: Albura !important;
-        padding: 5%;
-        font-size: 2em !important;   
-    }
-   
-    h1{
-        font-family: Albura SemiBold !important;
-        font-weight: 400;
-        line-height: 1.125;
-    }
- }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    body{
-        background-color: #f5f3f1 !important;
-        font-family: Albura !important;
-        padding: 5%;
-        font-size: 1.5em !important;  
-    }
-   
-    h1{
-        font-family: Albura SemiBold !important;
-        font-weight: 400;
-        line-height: 1.125;
-    }
-
-}
-
 body{
-    font-size: 1.5em !important;  
+    background-color: #f5f3f1 !important;
+        font-family: Albura !important;
+        padding: 5%;
+        font-size: 3rem !important;  
 }
 
 p {
