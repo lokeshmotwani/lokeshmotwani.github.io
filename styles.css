@@ -8,7 +8,8 @@
     }
     .inline-link{
         color: #000000 !important;
-        font-size: 60px !important;
+        font-size: 100px !important;
+        text-decoration: underline;
     }
  }
 
@@ -18,11 +19,12 @@
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 20px !important;    
+        font-size: 60px !important;    
     }
     .inline-link{
         color: #000000 !important;
         font-size: 20px !important;
+        text-decoration: underline;
     }
  }
 
@@ -32,11 +34,13 @@
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 20px !important;    
+        font-size: 20px !important;
+
     }
     .inline-link{
         color: #000000 !important;
         font-size: 20px !important;
+        text-decoration: underline;
     }
 
 }
