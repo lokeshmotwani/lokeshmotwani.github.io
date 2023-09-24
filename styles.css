@@ -1,3 +1,63 @@
 body{
-    background-color: #f5f3f1;
+    background-color: #f5f3f1 !important;
+    font-family: Albura !important;
+    padding: 5%;
+    font-size: 20px !important;
+}
+h1{
+    font-family: Albura SemiBold !important;
+    font-weight: 400;
+    line-height: 1.125;
+}
+p {
+    font-family: Albura  !important;
+}
+
+a{
+    font-family: Albura SemiBold !important;
+    color: black !important;
+    font-weight:400;
+    line-height: 32px;
+    font-family: Albura SemiBold !important;
+    font-size: 28px !important;
+}
+.me {
+    width:300px;
+    height:300px;
+}
+.header{
+   padding: 50px 0px;
+}
+.circle-container {
+    width: 150px; /* Adjust the size of the circle as needed */
+    height: 150px; /* Adjust the size of the circle as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Clips the content to the circular shape */
+  }
+
+.circle-image {
+    width: 100%; /* Make the image take up the full circle container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+.post-container{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0px;
+}
+.post-list{
+    margin: 20px 0px;
+}
+
+.post-metadata{
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.blog-text{
+    padding: 0 !important;
+    margin-top: 20px;
+}
+.introduction-text{
+    margin-bottom: 20px;
 }
