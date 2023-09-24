@@ -4,12 +4,17 @@
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 60px !important;    
+        font-size: 2em !important;    
     }
     .inline-link{
         color: #000000 !important;
         font-size: 100px !important;
         text-decoration: underline;
+    }
+    h1{
+        font-family: Albura SemiBold !important;
+        font-weight: 400;
+        line-height: 1.125;
     }
  }
 
@@ -19,12 +24,17 @@
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 60px !important;    
+        font-size: 2em !important;   
     }
     .inline-link{
         color: #000000 !important;
-        font-size: 20px !important;
+        font-size: 100px !important;
         text-decoration: underline;
+    }
+    h1{
+        font-family: Albura SemiBold !important;
+        font-weight: 400;
+        line-height: 1.125;
     }
  }
 
@@ -34,22 +44,22 @@
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 20px !important;
-
+        font-size: 2em !important;  
     }
     .inline-link{
         color: #000000 !important;
         font-size: 20px !important;
         text-decoration: underline;
     }
+    h1{
+        font-family: Albura SemiBold !important;
+        font-weight: 400;
+        line-height: 1.125;
+    }
 
 }
 
-h1{
-    font-family: Albura SemiBold !important;
-    font-weight: 400;
-    line-height: 1.125;
-}
+
 p {
     font-family: Albura  !important;
 }
