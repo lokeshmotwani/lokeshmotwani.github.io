@@ -2,8 +2,7 @@ body{
     background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 13rem !important;  
-        color: yellow !important;
+        font-size: 3rem !important;  
 }
 
 @media (min-width: 390px) and (max-width: 768px) {
@@ -11,8 +10,7 @@ body{
         background-color: #f5f3f1 !important;
         font-family: Albura !important;
         padding: 5%;
-        font-size: 15em !important;   
-        color: red !important; 
+        font-size: 5em !important;   
     }
    
     h1{
