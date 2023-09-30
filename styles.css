@@ -11,6 +11,8 @@ h1{
     line-height: 1.125;
 }
 
+
+
 @media (min-width: 320px) and (max-width: 768px) {
     body{
         background-color: #f5f3f1 !important;
@@ -24,6 +26,12 @@ h1{
         font-weight: 400;
         line-height: 1.125;
         font-size: 2.5rem;
+    }
+
+    .in-content-image{
+        width:300px !important;
+        height: 300px !important;
+        margin: 20px 0px;
     }
  }
 
@@ -81,4 +89,10 @@ a{
 .inline-link{
     color: #000000 !important;
     text-decoration: underline;
+}
+
+.in-content-image{
+    width:400px;
+    height:400px;
+    margin: 50px 0px;
 }
