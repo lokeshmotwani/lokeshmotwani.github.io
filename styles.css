@@ -33,6 +33,11 @@ h1{
         height: 300px !important;
         margin: 20px 0px;
     }
+
+    .in-content-rectangle-image{
+        margin: 20px 0px;
+        width: 100% !important;
+    }
  }
 
 p {
