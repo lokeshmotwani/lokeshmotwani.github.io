@@ -32,6 +32,28 @@
       integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function shareOnLinkedIn() {
+          // Get the current URL
+          var currentUrl = window.location.href;
+      
+          // Create the LinkedIn share URL
+          var linkedinShareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(currentUrl);
+      
+          // Open a new window or tab to share on LinkedIn
+          window.open(linkedinShareUrl, '_blank');
+      }
+      function shareOnTwitter() {
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Create the Twitter share URL
+    var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(currentUrl);
+
+    // Open a new window or tab to share on Twitter
+    window.open(twitterShareUrl, '_blank');
+}
+      </script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
@@ -246,6 +268,11 @@
                 <p>
                   P.S - This is based on my limited understanding of things.
                 </p>
+
+                <p>
+                  <h2><b>Share:</b></h2>  <a onclick="shareOnLinkedIn()"><img src="linkedin.png" style="width: 48px;height:48px"/></a><a  onclick="shareOnTwitter()"><img src="twitterx.png" style="width: 45px;height:45px"/></a>
+                </p>
+               
               </div>
             </div>
           </div>
