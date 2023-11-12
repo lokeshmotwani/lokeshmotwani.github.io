@@ -101,3 +101,6 @@ a{
     height:400px;
     margin: 50px 0px;
 }
+.linked-in-share-button{
+    background-image: url("linkedin.png");
+}

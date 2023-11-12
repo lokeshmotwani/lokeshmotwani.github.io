@@ -49,6 +49,16 @@
           // Open a new window or tab to share on LinkedIn
           window.open(linkedinShareUrl, '_blank');
       }
+      function shareOnTwitter() {
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Create the Twitter share URL
+    var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(currentUrl);
+
+    // Open a new window or tab to share on Twitter
+    window.open(twitterShareUrl, '_blank');
+}
       </script>
 
     <link rel="stylesheet" href="./styles.css?v=11.0" />
@@ -85,7 +95,10 @@
                   The Internet has just started. Ecommerce spending as a share of GDP touched 2.3% in 2020. This will only increase with time and with time we will see all sorts of actors on the internet playing bad games. We already hear a lot about people scamming others. The nature of the problem is big and it will become bigger with time. 
                 </p>
 
-                <button onclick="shareOnLinkedIn()">Share on LinkedIn</button>
+                <p>
+                  <h2><b>Share:</b></h2>  <a href="#" onclick="shareOnLinkedIn()"><img src="linkedin.png" style="width: 48px;height:48px"/></a><a href="#" onclick="shareOnTwitter()"><img src="twitterx.png" style="width: 45px;height:45px"/></a>
+                </p>
+               
 
               </div>
             </div>
