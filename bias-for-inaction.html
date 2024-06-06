@@ -64,8 +64,25 @@
       integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="./styles.css?v=11.0" />
+    <script>
+      document.getElementById('shareLinkedIn').addEventListener('click', () => {
+          const url = encodeURIComponent(window.location.href);
+          const title = encodeURIComponent(document.title);
+          const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`;
+          window.open(shareUrl, '_blank');
+      });
+  
+      document.getElementById('shareTwitter').addEventListener('click', () => {
+          const url = encodeURIComponent(window.location.href);
+          const text = encodeURIComponent('Check out this awesome page!');
+          const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+          window.open(shareUrl, '_blank');
+      });
+  </script>
+  
   </head>
   <body>
     <div class="container-fluid">
@@ -96,7 +113,8 @@
                   Unfortunately, this behavior can help our mind to reduce the
                   pain in the short term, but in the real world, the action does
                   not guarantee anything. The thoughts triggering the pain will
-                  return, pain will return and the brain will decieve itself again.
+                  return, pain will return and the brain will decieve itself
+                  again.
                 </p>
                 <p>
                   Bias for action is one of the values in many companies. It
@@ -132,6 +150,16 @@
                     Bias for Inaction.</i
                   >
                 </p>
+              </div>
+              <div class="col-md-12 col-xs-12 col-sm-12 share">
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-12 linkedinShare">
+                    <button id="shareLinkedIn" class="share-button linkedin">
+                      <i class="fab fa-linkedin"></i> Share on LinkedIn
+                    </button>
+                  </div>
+                  <div class="col-md-6 col-xs-12 col-sm-12 twitterShare"></div>
+                </div>
               </div>
             </div>
           </div>
