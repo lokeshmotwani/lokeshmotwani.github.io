@@ -69,6 +69,7 @@
     <link rel="stylesheet" href="./styles.css?v=11.0" />
     <script>
       document.getElementById('shareLinkedIn').addEventListener('click', () => {
+         alert("sharedli");
           const url = encodeURIComponent(window.location.href);
           const title = encodeURIComponent(document.title);
           const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`;
@@ -82,7 +83,7 @@
           window.open(shareUrl, '_blank');
       });
   </script>
-  
+
   </head>
   <body>
     <div class="container-fluid">
