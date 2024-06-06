@@ -58,16 +58,16 @@
         window.open(twitterShareUrl, "_blank");
       }
       function mainShareButtonClick() {
-        const mainShareButton = document.getElementById('mainShareButton');
-        const sharePanel = document.getElementById('sharePanel');
-        mainShareButton.style.display = 'none';
-        sharePanel.style.display = 'block';
+        const mainShareButton = document.getElementById("mainShareButton");
+        const sharePanel = document.getElementById("sharePanel");
+        mainShareButton.style.display = "none";
+        sharePanel.style.display = "block";
       }
       function closeSharePanelClick() {
-        const mainShareButton = document.getElementById('mainShareButton');
-        const sharePanel = document.getElementById('sharePanel');
-        mainShareButton.style.display = 'block';
-        sharePanel.style.display = 'none';
+        const mainShareButton = document.getElementById("mainShareButton");
+        const sharePanel = document.getElementById("sharePanel");
+        mainShareButton.style.display = "block";
+        sharePanel.style.display = "none";
       }
     </script>
     <link
@@ -76,48 +76,59 @@
       integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="./styles.css?v=11.0" />
     <script>
-      document.getElementById('shareLinkedIn').addEventListener('click', () => {
-         alert("sharedli");
-          const url = encodeURIComponent(window.location.href);
-          const title = encodeURIComponent(document.title);
-          const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`;
-          window.open(shareUrl, '_blank');
+      document.getElementById("shareLinkedIn").addEventListener("click", () => {
+        alert("sharedli");
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+        const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`;
+        window.open(shareUrl, "_blank");
       });
-  
-      document.getElementById('shareTwitter').addEventListener('click', () => {
-          const url = encodeURIComponent(window.location.href);
-          const text = encodeURIComponent('Check out this awesome page!');
-          const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-          window.open(shareUrl, '_blank');
-      });
-  </script>
 
+      document.getElementById("shareTwitter").addEventListener("click", () => {
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent("Check out this awesome page!");
+        const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+        window.open(shareUrl, "_blank");
+      });
+    </script>
   </head>
   <body>
     <!-- Sticky share button -->
-<button id="mainShareButton" onclick="mainShareButtonClick()" class="sticky-share-button">
-  <i class="fas fa-share"></i>
-</button>
-<!-- Share panel -->
-<div id="sharePanel" class="share-panel">
-  <span>Share</span>
-  <button id="shareLinkedIn" onclick="shareOnLinkedIn()">
-      <i class="fab fa-linkedin"></i> 
-  </button>
-  <button id="shareTwitter" onclick="shareOnTwitter()">
-      <i class="fab fa-twitter"></i> 
-  </button>
-  <button id="shareWhatsapp">
-      <i class="fab fa-whatsapp"></i> 
-  </button>
-  <button id="closePanel" class="close-button" onclick="closeSharePanelClick()">
-      <i class="fas fa-times"></i>
-  </button>
-</div>
+    <button
+      id="mainShareButton"
+      onclick="mainShareButtonClick()"
+      class="sticky-share-button"
+    >
+      <i class="fas fa-share"></i>
+      <span>12.3K</span>
+    </button>
+    <!-- Share panel -->
+    <div id="sharePanel" class="share-panel">
+      <span>Share</span>
+      <button id="shareLinkedIn" onclick="shareOnLinkedIn()">
+        <i class="fab fa-linkedin"></i>
+      </button>
+      <button id="shareTwitter" onclick="shareOnTwitter()">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button id="shareWhatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+      <button
+        id="closePanel"
+        class="close-button"
+        onclick="closeSharePanelClick()"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
 
     <div class="container-fluid">
       <div class="row posts">
