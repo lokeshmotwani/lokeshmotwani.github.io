@@ -123,7 +123,7 @@ a {
 .share-panel {
     display: none;
     position: fixed;
-    bottom: 100px;
+    bottom: 20px;
     right: 20px;
     background-color: white;
     border: 1px solid #ccc;
@@ -154,6 +154,6 @@ a {
     background-color: #f0f0f0;
 }
 .share-panel .close-button {
-    color: white;
+    color: black;
     text-align: center;
 }
