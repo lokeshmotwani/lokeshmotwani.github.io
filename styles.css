@@ -103,70 +103,57 @@ a {
   background-image: url("linkedin.png");
 }
 
-.share-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 15px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: white;
-}
-.share-button i {
-  margin-right: 8px;
-}
-.linkedin {
-  background-color: #0077b5;
-}
-.twitter {
-  background-color: #1da1f2;
-}
 .sticky-share-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0077B5; /* LinkedIn color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
 }
-.sticky-share-button i {
-  margin-right: 8px;
+.share-panel {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
 }
-.share-options {
-  display: none;
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.share-panel button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    transition: background-color 0.3s;
 }
-.share-options button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 16px;
-  color: black;
+.share-panel button i {
+    margin-right: 8px;
+    font-size: 20px;
 }
-.share-options button i {
-  margin-right: 8px;
+.share-panel button:hover {
+    background-color: #f0f0f0;
 }
-.share-options button:hover {
-  background-color: #f0f0f0;
+.share-panel .close-button {
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
 }
