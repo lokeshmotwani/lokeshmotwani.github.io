@@ -58,7 +58,6 @@
         window.open(twitterShareUrl, "_blank");
       }
       function mainShareButtonClick() {
-        alert("clicked");
         const mainShareButton = document.getElementById('mainShareButton');
         const sharePanel = document.getElementById('sharePanel');
         mainShareButton.style.display = 'none';
@@ -99,17 +98,18 @@
 </button>
 <!-- Share panel -->
 <div id="sharePanel" class="share-panel">
+  <span>Share</span>
   <button id="shareLinkedIn">
-      <i class="fab fa-linkedin"></i> Share on LinkedIn
+      <i class="fab fa-linkedin"></i> 
   </button>
   <button id="shareTwitter">
-      <i class="fab fa-twitter"></i> Share on Twitter
+      <i class="fab fa-twitter"></i> 
   </button>
   <button id="shareWhatsapp">
-      <i class="fab fa-whatsapp"></i> Share on WhatsApp
+      <i class="fab fa-whatsapp"></i> 
   </button>
   <button id="closePanel" class="close-button">
-      <i class="fas fa-times"></i> Close
+      <i class="fas fa-times"></i>
   </button>
 </div>
 
