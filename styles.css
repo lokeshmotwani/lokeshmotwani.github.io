@@ -160,3 +160,7 @@ a {
     color: black;
     text-align: center;
 }
+.social-sharing-number{
+    font-size: 10px;
+    display: block;
+}
