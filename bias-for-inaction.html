@@ -63,6 +63,12 @@
         mainShareButton.style.display = 'none';
         sharePanel.style.display = 'block';
       }
+      function closeSharePanelClick() {
+        const mainShareButton = document.getElementById('mainShareButton');
+        const sharePanel = document.getElementById('sharePanel');
+        mainShareButton.style.display = 'block';
+        sharePanel.style.display = 'none';
+      }
     </script>
     <link
       rel="stylesheet"
@@ -99,10 +105,10 @@
 <!-- Share panel -->
 <div id="sharePanel" class="share-panel">
   <span>Share</span>
-  <button id="shareLinkedIn">
+  <button id="shareLinkedIn" onclick="shareOnLinkedIn()">
       <i class="fab fa-linkedin"></i> 
   </button>
-  <button id="shareTwitter">
+  <button id="shareTwitter" onclick="shareOnTwitter()">
       <i class="fab fa-twitter"></i> 
   </button>
   <button id="shareWhatsapp">
@@ -178,20 +184,6 @@
                     Bias for Inaction.</i
                   >
                 </p>
-              </div>
-              <div class="col-md-12 col-xs-12 col-sm-12 share">
-                <div class="row">
-                  <div class="col-md-2 col-xs-12 col-sm-12 linkedinShare">
-                    <button id="shareLinkedIn" onclick="shareOnLinkedIn()" class="share-button linkedin">
-                      Share on &thinsp; <i class="fab fa-linkedin"></i> 
-                    </button>
-                  </div>
-                  <div class="col-md-2 col-xs-12 col-sm-12 twitterShare">
-                    <button id="shareTwitter" onclick="shareOnTwitter()" class="share-button twitter">
-                     Share on &thinsp; <i class="fab fa-x-twitter"></i> 
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
