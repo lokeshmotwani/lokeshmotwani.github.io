@@ -57,6 +57,13 @@
         // Open a new window or tab to share on Twitter
         window.open(twitterShareUrl, "_blank");
       }
+      function mainShareButtonClick() {
+        alert("clicked");
+        const mainShareButton = document.getElementById('mainShareButton');
+        const sharePanel = document.getElementById('sharePanel');
+        mainShareButton.style.display = 'none';
+        sharePanel.style.display = 'block';
+      }
     </script>
     <link
       rel="stylesheet"
@@ -87,7 +94,7 @@
   </head>
   <body>
     <!-- Sticky share button -->
-<button id="mainShareButton" class="sticky-share-button">
+<button id="mainShareButton" onclick="mainShareButtonClick()" class="sticky-share-button">
   <i class="fas fa-share"></i>
 </button>
 <!-- Share panel -->
