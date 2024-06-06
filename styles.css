@@ -130,8 +130,8 @@ a {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 200px;
     z-index: 1000; /* Ensure it stays on top */
+    padding: 10px;
 }
 .share-panel button {
     display: flex;
