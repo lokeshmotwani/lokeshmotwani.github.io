@@ -72,6 +72,11 @@ a {
   padding-left: 0;
   margin: 10px 0px;
 }
+
+.post-container a {
+  text-decoration: underline;
+}
+
 .post-list {
   margin: 20px 0px;
 }
